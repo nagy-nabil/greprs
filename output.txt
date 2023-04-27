@@ -1,0 +1,1 @@
+🪵 [main.rs:5]~ token ~ [0;32margs[0m = ["target/debug/greprs", "to"]
