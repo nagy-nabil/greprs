@@ -59,9 +59,7 @@ fn main() {
         }],
     };
     eprintln!("{}", app);
-    let args: Vec<String> = env::args().collect();
-    println!("🪵 [main.rs:5]~ token ~ \x1b[0;32margs\x1b[0m = {:?}", args);
-    let config = Config::build(&args).unwrap_or_else(|err| {
+    let config = Config::build(env::args()).unwrap_or_else(|err| {
         eprintln!("unknow commands\n{}", err);
         process::exit(1);
     });
